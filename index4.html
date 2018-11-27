@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="iveskite skaiciu" id="input">
+<input type="submit" value="ar lyginis" onclick="handleClick()">
+<div id="output"></div>
+<script>
+    var atsakymas = 0;
+
+    function handleClick() {
+        var zodis = document.getElementById("input").value;
+        if (zodis == "0") {
+            document.getElementById("output").innerHTML = atsakymas;
+        } else {
+            atsakymas += Number(zodis);
+        }
+    }
+
+</script>
+</body>
+</html>
