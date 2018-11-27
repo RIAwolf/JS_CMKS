@@ -13,11 +13,12 @@
 
     function handleClick() {
         var zodis = document.getElementById("input").value;
-        if(isNaN(zodis)){
-            document.getElementById("output").innerHTML ="Ivestas ne skaicius";
-        }else if (zodis == "0") {
+        if (isNaN(zodis)) {
+            document.getElementById("output").innerHTML = "Ivestas ne skaicius";
+        } else if (zodis == "0") {
             document.getElementById("output").innerHTML = atsakymas;
         } else {
+            document.getElementById("output").innerHTML = "";
             atsakymas += Number(zodis);
         }
     }
