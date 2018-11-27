@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="iveskite skaiciu" id="input">
+<input type="submit" value="Is ko dalinasi" onclick="handleClick()">
+<div id="output"></div>
+<script>
+    function handleClick() {
+        var atsakymas = "";
+        var skaicius = Number(document.getElementById("input").value);
+        if (skaicius % 3 == 0) {
+            atsakymas += "Dalinasi is 3 ";
+        }
+
+        if (skaicius % 5 == 0) {
+            atsakymas += "Dalinasi is 5 ";
+        }
+
+        if (skaicius % 7 == 0) {
+            atsakymas += "Dalinasi is 7 ";
+        }
+
+        if (atsakymas == "") {
+            atsakymas = "Nesidalina is nieko";
+        }
+
+        document.getElementById("output").innerHTML = atsakymas;
+    }
+
+</script>
+</body>
+</html>
