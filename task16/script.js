@@ -11,7 +11,7 @@ function handleClick() {
     }
 
 
-    document.getElementById("output").innerHTML = "Zodyje " + text + " a raidziu surasta : " + kiekis;
+    document.getElementById("output").innerHTML = "Zodyje " + text + " ab raidziu surasta : " + kiekis;
 }
 
 
