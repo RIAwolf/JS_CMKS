@@ -7,7 +7,7 @@ function handleClick() {
 
     var kiekis = 0;
     for (var i = 0; i < text.length - 1; i++) {
-        if (text.charAt(i) == "a" && text.charAt(i + 1) == b) kiekis++;
+        if (text.charAt(i) == "a" && text.charAt(i + 1) == "b") kiekis++;
     }
 
 
