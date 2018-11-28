@@ -10,7 +10,6 @@ function handleClick() {
         if (text.charAt(i) == "a" && text.charAt(i + 1) == "b") kiekis++;
     }
 
-
     document.getElementById("output").innerHTML = "Zodyje " + text + " ab raidziu surasta : " + kiekis;
 }
 
